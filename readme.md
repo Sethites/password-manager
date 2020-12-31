@@ -2,7 +2,9 @@
 
 ## Introduction
 
-![](.\pwd.gif)
+### 簡單的密碼管理器
+
+![](./pwd.gif)
 
 ## Installation
 
