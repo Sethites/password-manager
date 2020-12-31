@@ -1,5 +1,9 @@
 # 密碼管理器  
 
+## Introduction
+
+![](.\pwd.gif)
+
 ## Installation
 
 1. clone to your computer
