@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: darkolivegreen;
+    min-height: 100%;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.min100 {
+    min-height: 100%;
+}
+
+.bg-blue {
+    background-color: rgb(132, 168, 180);
+}
+
+div[class^=col] {
+    text-align: center;
+}
+
+button {
+    height: 35px;
+    width: 100%;
+    border-radius: 2px;
+    color: rgb(100, 0, 0);
+    font-size: 15px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.mybtn:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.btn-primary:focus {
+    border-color: #0d6efd;
+    background-color: #0d6efd;
+}
+
+.btn-warning:focus {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-danger:focus {
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}
+
+img {
+    border-radius: 10%;
+    margin-top: 40px;
+    height: 100px;
+    background-color: rgb(5, 5, 5);
+}
+
+.ov-s {
+    overflow: scroll;
+}
+.ov-h {
+    overflow: hidden;
+}
+.b-0 {
+    border-left: 3px solid black;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.b-1 {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.element::-webkit-scrollbar { width: 0 !important }
+
+.pf {
+    display: block;
+    width: 163px !important;
+    height: 610.667px !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+
+.scroll_enabled {
+    overflow: scroll;
+    height: 1000px; /* define your custom height */
+}
+
+.scroll_enabled::-webkit-scrollbar {
+    width: 20px;
+}
+.scroll_enabled::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+}
+.scroll_enabled::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 6px;
+    border: 4px solid rgba(0,0,0,0);
+    background-clip: content-box;
+    min-width: 32px;
+    min-height: 32px;
+}
+.scroll_enabled::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0);
+}
+.min90{
+    min-width: 99.9%;
+}
+
+#clear,
+#hide,
+#show,
+#copy,
+#add,
+#delete,
+#change,
+.cbx,
+.add-form
+.passAll {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.add-form {
+    border: 5px solid rgb(121, 121, 121);
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    width: 600px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+}
+
+.add-head {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-top: 40px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>密碼管理器</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+    <!-- add style -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="passAll container min-vh-100 p-0 min90 position-relative d-none">
+        <div class="row min-vh-100 p-0 m-0 ov-h">
+            <div class="col-2 min-vh-100 bg-secondary p-0 m-0">
+                <div class="container pf">
+                    <div class="row g-3 ov-h m-3">
+
+                        <div class="col-2"></div>
+                        <div class="col-8"><button class="mybtn btn-primary" id="toggle">隱藏/顯示</button></div>
+                        <div class="col-2"></div>
+                        <div class="col-2"></div>
+                        <div class="col-8"><button class="mybtn btn-primary" id="copy">複製密碼</button></div>
+                        <div class="col-2"></div>
+                        <div class="col-2 "></div>
+                        <div class="col-8"><button class="mybtn btn-primary" id="add">新增密碼</button></div>
+                        <div class="col-2"></div>
+                        <div class="col-2"></div>
+                        <div class="col-8"><button class="mybtn btn-primary" id="change">更改密碼</button></div>
+                        <div class="col-2"></div>
+                        <div class="col-2"></div>
+                        <div class="col-8"><button class="mybtn btn-warning" id="delete">刪除密碼</button></div>
+                        <div class="col-2"></div>
+                        <div class="col-2"></div>
+                        <div class="col-8"><button class="mybtn btn-danger" id="clear">刪除全部</button></div>
+                        <div class="col-2"></div>
+                        <div class="col-12"><img src="./img/logo.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 min-vh-100 bg-blue p-0 m-0 scroll_enabled element">
+                <div class="container">
+                    <div class="row p-0 m-0">
+                        <div class="col-1 b-0">選擇</div>
+                        <div class="col-2 b-1">機構</div>
+                        <div class="col-5 b-1">賬號</div>
+                        <div class="col-4 b-1">密碼</div>
+                    </div>
+                    <div id="pwdtable">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- #region add form popup  -->
+        <div class="add-form d-none">
+            <h1 class=" add-head">新增密碼</h1>
+            <div class="input-group mb-3 w-50 mx-auto mt-4">
+                <span class="input-group-text" id="inputGroup-sizing-default">機構</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" id="company">
+            </div>
+            <div class="input-group mb-3 w-50 mx-auto">
+                <span class="input-group-text" id="inputGroup-sizing-default">賬號</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" id="account">
+            </div>
+            <div class="input-group mb-3 w-50 mx-auto">
+                <span class="input-group-text" id="inputGroup-sizing-default">密碼</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" id="password">
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success btn-sm mybtn" id="addCheck">確定</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-danger btn-sm mybtn" id="addCancel">取消</button>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- #endregion -->
+    <!-- add js -->
+    <!-- If the require doesn't work, include first the jQuery file
+    <script src="jquery-3.0.0.min.js"></script>-->
+    <script>
+        window.$ = window.jQuery = require('./js/jquery-3.5.1.min');
+    </script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/clear.js"></script>
+    <script src="js/delete.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/ths.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/password.js"></script>
+</body>
+
+</html>
