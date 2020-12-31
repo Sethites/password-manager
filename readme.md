@@ -14,4 +14,4 @@
 
 ## Download
 
-打包好的版本[點擊](https://drive.google.com/file/d/1GpB6PcG867b70tzXAL8WqLkXfwZOmp2X/view)下載
+打包好的版本[點擊](https://drive.google.com/file/d/1qXkYI2JmfBF525gvn7oLUooKOwW1Ox2o/view?usp=sharing)下載
